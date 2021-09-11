@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>registation page</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<section class="header">
+			<div class="title">
+				<h1>Child Care Management System</h1><br><br>
+			</div>
+		
+	<div class="container">
+		
+		
+		<div class="card">
+			<div class="inner-box" id="card">
+
+
+				
+				<div class="front">
+					<h2>LOGIN</h2>
+					<form>
+						<input type="email" class="input-box" placeholder="your email id" name="" required>
+						<input type="password" class="input-box" placeholder="password" name="" required>
+						<button type="submit" class="submit-btn">submit</button>
+						<input type="checkbox"><span>Remember me</span>
+					</form>
+					<button type="button" class="btn" onclick="openRegister()">I am new hear</button>
+					<a href="">Forget Password </a>
+				</div>
+
+
+
+				<div class="back">
+					<h2>REGISTER</h2>
+					<form>
+						<input type="text" class="input-box" placeholder="your name" name="" required>
+						<input type="text" class="input-box" placeholder="address" name="" required>
+						<input type="date" class="input-box" placeholder="birthday" name="" required>
+						<input type="text" class="input-box" placeholder="birth certificae number" name="" required>
+						<button type="submit" class="submit-btn">submit</button>
+						<input type="checkbox"><span>Remember me</span>
+					</form>
+					<button type="button" class="btn" onclick="openLogin()">I have an account</button>
+					<a href="">Forget Password </a>
+				</div>
+
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+	</section>
+
+	<script type="text/javascript">
+		var card=document.getElementById("card");
+		function openRegister() {
+			// body...
+			card.style.transform="rotateY(-180deg)";
+
+		}
+		function openLogin() {
+			// body...
+			card.style.transform="rotateY(0deg)";
+			
+		}
+	</script>
+</body>
+</html>
